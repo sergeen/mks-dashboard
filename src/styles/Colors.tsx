@@ -1,5 +1,6 @@
 const Colors = {
   primary: {
+    black: "hsl(0, 0%, 0%)",
     white: "hsl(0, 0%, 100%)",
     limeGreen: "hsl(163, 72%, 41%)",
     brightRed: "hsl(356, 69%, 56%)",
@@ -15,7 +16,7 @@ const Colors = {
     lightGrey: "hsl(230, 75%, 98%)",
     mediumGrey: "hsl(222, 50%, 96%)",
   },
-  darkTheme: {
+  dark: {
     toggle: "linear-gradient(hsl(210, 78%, 56%),hsl(146, 68%, 55%))",
     veryDarkBlueBg: "hsl(230, 17%, 14%)",
     veryDarkBlueTopBgPattern: "hsl(232, 19%, 15%)",
@@ -23,7 +24,7 @@ const Colors = {
     desaturatedBlueText: "hsl(228, 34%, 66%)",
     desaturatedPurpleChart: "hsl(243, 51%, 70%)",
   },
-  lightTheme: {
+  light: {
     veryPaleBlueTopBgPattern: "hsl(225, 100%, 98%)",
     lightGrayishBlueCardBg: "hsl(227, 47%, 96%)",
     darkGrayishBlueText: "hsl(228, 12%, 44%)",
