@@ -1,7 +1,7 @@
 import {StyledModal} from "./Modal.styles";
 
 type Props = {
-  children?: React.ReactNode;
+  children: React.ReactNode[];
 };
 
 const Modal: React.FunctionComponent<Props> = ({children}) => {

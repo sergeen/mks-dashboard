@@ -1,7 +1,15 @@
 import styled from "styled-components";
 
 export const StyledOverlay = styled.div`
+  align-items: center;
   background-color: ${(props) => props.theme.overlay};
-  height: 100vh;
-  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  padding: 14px;
+  position: absolute;
+  top: 0;
+  width: 100%;
 `;

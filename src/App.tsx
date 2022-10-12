@@ -1,16 +1,12 @@
-import {StrictMode, useEffect, useState} from "react";
-import {ThemeProvider, createGlobalStyle} from "styled-components";
-import reset from "styled-reset";
-import normalize from "styled-normalize";
+import {StrictMode, useState} from "react";
+import {ThemeProvider} from "styled-components";
 
+import {GlobalStyles} from "./components/GlobalStyles";
 import Theme from "./styles/Theme";
 import Overlay from "./components/Overlay";
 import Modal from "./components/Modal";
-
-const GlobalStyle = createGlobalStyle`
-  ${reset}
-  ${normalize}
-`;
+import ModalHeader from "./components/ModalHeader";
+import HighCharts from "./components/HighCharts";
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -18,10 +14,12 @@ function App() {
   return (
     <StrictMode>
       <ThemeProvider theme={isDarkTheme ? Theme.darkTheme : Theme.lightTheme}>
-        <GlobalStyle />
+        <GlobalStyles />
+        <button onClick={() => setIsDarkTheme(!isDarkTheme)}>Toggle</button>
         <Overlay>
           <Modal>
-            <button onClick={() => setIsDarkTheme(!isDarkTheme)}>Toggle</button>
+            <ModalHeader />
+            <HighCharts />
           </Modal>
         </Overlay>
       </ThemeProvider>

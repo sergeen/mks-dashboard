@@ -1,6 +1,7 @@
 const Colors = {
   primary: {
     black: "hsl(0, 0%, 0%)",
+    overlayBlack: "hsla(0, 0%, 0%, .5)",
     white: "hsl(0, 0%, 100%)",
     limeGreen: "hsl(163, 72%, 41%)",
     brightRed: "hsl(356, 69%, 56%)",
