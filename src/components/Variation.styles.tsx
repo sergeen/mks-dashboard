@@ -7,4 +7,8 @@ export const StyledVariation = styled.div`
   h3 {
     color: ${(props) => props.theme.positive};
   }
+  @media (max-width: 375px) {
+    align-items: baseline;
+    gap: 0;
+  }
 `;

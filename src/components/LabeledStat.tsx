@@ -5,17 +5,16 @@ const LabeledStat: React.FC<{
   value: number;
   valueType: "number" | "fraction";
   label: string;
-  labelPosition: "right" | "bottom";
   variation?: "+" | "-";
-}> = ({value, valueType, label, labelPosition, variation}) => {
+}> = ({value, valueType, label, variation}) => {
   return variation === undefined ? (
     <StyledLabeledStat>
       <h3>{value}</h3>
       <p>{label}</p>
     </StyledLabeledStat>
   ) : (
-    <StyledLabeledStat variation={variation} labelPosition={labelPosition}>
-      <Variation variation={variation} value={value} valueType={valueType} />
+    <StyledLabeledStat variation={variation}>
+      <Variation value={value} valueType={valueType} variation={variation} />
       <p>{label}</p>
     </StyledLabeledStat>
   );

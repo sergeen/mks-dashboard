@@ -28,4 +28,34 @@ export const StyledLabeledStat = styled.div`
     text-align: left;
     white-space: pre-line;
   }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: middle;
+    gap: 11px;
+    p {
+      text-align: center;
+    }
+  }
+  @media (max-width: 425px) {
+    gap: 4px;
+    h3 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 375px) {
+    flex-direction: row;
+    justify-content: center;
+    h3 {
+      font-size: 14px;
+      line-height: 14px;
+    }
+    p {
+      font-size: 12px;
+      white-space: normal;
+      text-align: left;
+    }
+  }
 `;

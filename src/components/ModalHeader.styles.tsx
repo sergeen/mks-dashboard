@@ -5,18 +5,41 @@ export const StyledModalHeader = styled.div`
   flex-direction: column;
   gap: 40px;
   padding: 43px 60px 25px 60px;
+  transition: padding 500ms linear;
   .top,
-  .bottom {
+  .stats-container {
     display: flex;
-    gap: 10px;
   }
   .top {
     h3 {
       font-family: "Inter Bold";
       font-size: 28px;
     }
-    align-items: flex-start;
     flex-direction: column;
     gap: 16px;
+  }
+  .stats-container {
+    gap: 10px;
+  }
+  @media (max-width: 768px) {
+    padding: 20px;
+    gap: 20px;
+    .top {
+      align-items: center;
+      gap: 8px;
+      h3 {
+        font-size: 18px;
+      }
+    }
+    .stats-container {
+      justify-content: center;
+      gap: 10%;
+    }
+  }
+  @media (max-width: 375px) {
+    .stats-container {
+      flex-direction: column;
+      gap: 4px;
+    }
   }
 `;

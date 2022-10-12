@@ -1,3 +1,4 @@
+import Close from "./Close";
 import LabeledStat from "./LabeledStat";
 import {StyledModalHeader} from "./ModalHeader.styles";
 import SocialHandle from "./SocialHandle";
@@ -8,22 +9,21 @@ import SocialHandle from "./SocialHandle";
 const ModalHeader = () => {
   return (
     <StyledModalHeader>
+      <Close/>
       <div className="top">
         <h3>Facebook followers</h3>
         <SocialHandle />
       </div>
-      <div className="bottom">
+      <div className="stats-container">
         <LabeledStat
           label={`Total 
           Followers`}
-          labelPosition="right"
           value={1987}
           valueType={"number"}
         />
         <LabeledStat
           label={`New followers 
           in the past 10 days`}
-          labelPosition="right"
           value={81}
           valueType={"number"}
           variation="+"
@@ -31,7 +31,6 @@ const ModalHeader = () => {
         <LabeledStat
           label={`New followers 
           TODAY`}
-          labelPosition="right"
           value={12}
           valueType={"number"}
           variation="+"
