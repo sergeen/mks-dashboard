@@ -12,6 +12,7 @@ export const StyledModalHeader = styled.div`
   }
   .top {
     h3 {
+      color: ${(props) => props.theme.defaultText};
       font-family: "Inter Bold";
       font-size: 28px;
     }

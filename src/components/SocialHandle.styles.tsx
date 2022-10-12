@@ -8,6 +8,7 @@ export const StyledSocialHandle = styled.div`
     height: 20px;
   }
   p {
+    color: ${(props) => props.theme.defaultText};
     font-family: "Inter Bold";
     font-size: 14px;
   }

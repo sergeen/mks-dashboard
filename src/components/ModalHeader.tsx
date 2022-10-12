@@ -9,7 +9,7 @@ import SocialHandle from "./SocialHandle";
 const ModalHeader = () => {
   return (
     <StyledModalHeader>
-      <Close/>
+      <Close />
       <div className="top">
         <h3>Facebook followers</h3>
         <SocialHandle />

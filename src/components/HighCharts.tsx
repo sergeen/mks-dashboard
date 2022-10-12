@@ -2,12 +2,15 @@ import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
 import HighChartsOptions from "./HighChartsOptions";
+import {SyledHighCharts} from "./HighCharts.styles";
+
+import { useTheme } from 'styled-components';
 
 const HighCharts = () => {
   return (
-    <>
-      <HighchartsReact highcharts={Highcharts} options={HighChartsOptions} />
-    </>
+    <SyledHighCharts>
+      <HighchartsReact highcharts={Highcharts} options={HighChartsOptions(useTheme())} />
+    </SyledHighCharts>
   );
 };
 

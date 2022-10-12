@@ -5,7 +5,6 @@ export const StyledModal = styled.div`
   border-radius: 16px;
   display: flex;
   flex-direction: column;
-  height: 100%;
   max-height: 550px;
   max-width: 1000px;
   overflow: hidden;
