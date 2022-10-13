@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-export const StyledClose = styled.button`
+export const StyledClose = styled.div`
+cursor: pointer;
   position: absolute;
   right: 28px;
   top: 28px;

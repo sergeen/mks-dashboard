@@ -1,13 +1,12 @@
 import {useTheme} from "styled-components";
-import {useState} from "react";
 
 import {StyledClose} from "./Close.styles";
 
-const Close = () => {
+const Close = ({toggleModal}) => {
   const theme = useTheme();
 
   return (
-    <StyledClose>
+    <StyledClose onClick={() => toggleModal()}>
       <svg
         fill="none"
         height="12"

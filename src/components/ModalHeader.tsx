@@ -3,13 +3,10 @@ import LabeledStat from "./LabeledStat";
 import {StyledModalHeader} from "./ModalHeader.styles";
 import SocialHandle from "./SocialHandle";
 
-// TODO:
-// Map function, based on JSON
-
-const ModalHeader = () => {
+const ModalHeader = ({toggleModal}) => {
   return (
     <StyledModalHeader>
-      <Close />
+      <Close toggleModal={toggleModal}/>
       <div className="top">
         <h3>Facebook followers</h3>
         <SocialHandle />

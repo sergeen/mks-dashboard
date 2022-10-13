@@ -4,8 +4,9 @@ export const StyledVariation = styled.div`
   align-items: center;
   display: flex;
   gap: 10px;
-  h3 {
-    color: ${(props) => props.theme.positive};
+  h3,
+  p {
+    color: ${(props) => (props.variation === "+" ? props.theme.positive : props.theme.negative)};
   }
   @media (max-width: 375px) {
     align-items: baseline;

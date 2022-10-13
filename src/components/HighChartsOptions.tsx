@@ -2,7 +2,7 @@ const HighChartsOptions = (theme) => ({
   chart: {
     type: "spline",
     height: 34 + "%",
-    backgroundColor: theme.chartBackgorundcolor,
+    backgroundColor: theme.chartBg,
   },
   xAxis: {
     title: undefined,

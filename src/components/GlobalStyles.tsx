@@ -15,9 +15,27 @@ import InterBold2 from "../assets/fonts/Inter-Bold.woff2";
 export const GlobalStyles = createGlobalStyle`
   ${reset}
   ${normalize}
+  html, body {
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  body {
+    background-color: ${(props) => props.theme.pageBg};
+  }
   #root {
-    height: 100vh;
-    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &::before {
+      background-color: ${(props) => props.theme.topBgPattern};
+      content: "";
+      height: 244px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      border-radius: 0 0 20px 20px;
+    }
   }
   @font-face {
         font-family: 'Inter Regular';

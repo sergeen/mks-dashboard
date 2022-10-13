@@ -2,6 +2,7 @@ import Colors from "./Colors";
 
 const Theme = {
   darkTheme: {
+    headerSubtitle: Colors.neutral.secondaryGray,
     overlay: Colors.primary.overlayBlack,
     pageBg: Colors.dark.veryDarkBlueBg,
     topBgPattern: Colors.dark.veryDarkBlueTopBgPattern,
@@ -16,9 +17,15 @@ const Theme = {
     chartTooltipBorder: Colors.neutral.dashedGrey,
     chartTooltipBg: Colors.dark.veryDarkBlueBg,
     chartTooltipText: Colors.dark.desaturatedPurpleChart,
-    chartBackgorundcolor: Colors.dark.veryDarkBlueBg,
+    chartBg: Colors.dark.veryDarkBlueBg,
+    cardBg: Colors.dark.veryDarkBlueBg,
+    hoverCardBg: Colors.dark.DarkHoverCardBg,
+    toggleBg: Colors.dark.toggle,
+    toggleDot: Colors.dark.veryDarkBlueTopBgPattern,
+    toggleText: Colors.neutral.secondaryGray,
   },
   lightTheme: {
+    headerSubtitle: Colors.neutral.darkGrey,
     overlay: Colors.primary.overlayBlack,
     pageBg: Colors.primary.white,
     topBgPattern: Colors.light.veryPaleBlueTopBgPattern,
@@ -33,7 +40,12 @@ const Theme = {
     chartTooltipBorder: Colors.neutral.dashedGrey,
     chartTooltipBg: Colors.primary.white,
     chartTooltipText: Colors.dark.desaturatedPurpleChart,
-    chartBackgorundcolor: Colors.primary.white,
+    chartBg: Colors.primary.white,
+    cardBg: Colors.neutral.mediumGrey,
+    hoverCardBg: Colors.light.LightHoverCardBg,
+    toggleBg: Colors.light.toggle,
+    toggleDot: Colors.light.veryPaleBlueTopBgPattern,
+    toggleText: Colors.neutral.darkGrey,
   },
 };
 

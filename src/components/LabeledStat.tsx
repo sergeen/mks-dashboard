@@ -14,7 +14,7 @@ const LabeledStat: React.FC<{
     </StyledLabeledStat>
   ) : (
     <StyledLabeledStat variation={variation}>
-      <Variation value={value} valueType={valueType} variation={variation} />
+      <Variation variationValue={value} valueType={valueType} variation={variation} />
       <p>{label}</p>
     </StyledLabeledStat>
   );
