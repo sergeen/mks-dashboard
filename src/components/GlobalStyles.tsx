@@ -27,7 +27,7 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     align-items: center;
     flex-direction: column;
-    position: relative;
+    /* position: relative; */
     &::before {
       background-color: ${(props) => props.theme.topBgPattern};
       content: "";

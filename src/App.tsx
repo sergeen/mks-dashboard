@@ -29,7 +29,6 @@ function App() {
   };
 
   const toggleModal = () => {
-    console.log("");
     setIsModal(isModal ? false : true);
   };
 
