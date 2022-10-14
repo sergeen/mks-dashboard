@@ -20,6 +20,9 @@ export const StyledDashboardHeader = styled.header`
       font-size: 14px;
     }
   }
+  @media (max-width: 1110px) {
+    padding: 0 10px;
+  }
   @media (max-width: 768px) {
     align-items: flex-start;
     justify-content: flex-end;

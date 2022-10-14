@@ -21,11 +21,13 @@ export const GlobalStyles = createGlobalStyle`
   }
   body {
     background-color: ${(props) => props.theme.pageBg};
+    transition: height, background-color 300ms linear;
   }
   #root {
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
     &::before {
       background-color: ${(props) => props.theme.topBgPattern};
       content: "";
@@ -35,6 +37,12 @@ export const GlobalStyles = createGlobalStyle`
       top: 0;
       width: 100%;
       border-radius: 0 0 20px 20px;
+      transition: height, background-color 300ms linear;
+    }
+    @media (max-width: 768px) {
+      &::before {
+        height: 80%;
+      }
     }
   }
   @font-face {

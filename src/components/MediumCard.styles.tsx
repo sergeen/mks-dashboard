@@ -35,6 +35,7 @@ export const StyledMediumCard = styled.div`
   padding: 32px 0 25px 0;
   position: relative;
   transition: background-color 200ms linear;
+  transition: padding, gap 500ms linear;
 
   div {
     display: flex;

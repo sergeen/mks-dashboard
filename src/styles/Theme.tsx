@@ -18,7 +18,7 @@ const Theme = {
     chartTooltipBg: Colors.dark.veryDarkBlueBg,
     chartTooltipText: Colors.dark.desaturatedPurpleChart,
     chartBg: Colors.dark.veryDarkBlueBg,
-    cardBg: Colors.dark.veryDarkBlueBg,
+    cardBg: Colors.dark.darkDesaturatedBlueCardBg,
     hoverCardBg: Colors.dark.DarkHoverCardBg,
     toggleBg: Colors.dark.toggle,
     toggleDot: Colors.dark.veryDarkBlueTopBgPattern,
