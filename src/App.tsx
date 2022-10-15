@@ -7,7 +7,6 @@ import CardsContainer from "./components/CardsContainer";
 import DashboardHeader from "./components/dashboardHeader";
 import HighCharts from "./components/HighCharts";
 import MainContainer from "./components/MainContainer";
-import MediumCard from "./components/MediumCard";
 import Modal from "./components/Modal";
 import ModalHeader from "./components/ModalHeader";
 import Overlay from "./components/Overlay";
@@ -16,8 +15,9 @@ import SimpleTitle from "./components/SimpleTitle";
 import SmallCardsContainer from "./components/SmallCardsContainer";
 import SmallCard from "./components/SmallCard";
 
-export const AppContext = createContext(); //REMOVE??
 const dataInit = providedContent;
+
+export const AppContext = createContext(dataInit);
 
 function App() {
   const [isModal, setIsModal] = useState(false);
@@ -39,49 +39,7 @@ function App() {
           <GlobalStyles />
           <MainContainer>
             <DashboardHeader isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
-            <CardsContainer>
-              <MediumCard
-                handle={"@nathanf"}
-                label={"FOLLOWERS"}
-                site="facebook"
-                toggleModal={toggleModal}
-                value={1987}
-                valueType="number"
-                variation="+"
-                variationValue={12}
-                when="Today"
-              />
-              <MediumCard
-                handle={"@nathanf"}
-                label={"FOLLOWERS"}
-                site="twitter"
-                value={1044}
-                valueType="number"
-                variation="+"
-                variationValue={99}
-                when="Today"
-              />
-              <MediumCard
-                handle={"@realnathanf"}
-                label={"FOLLOWERS"}
-                site="instagram"
-                value={"11k"}
-                valueType="number"
-                variation="+"
-                variationValue={1099}
-                when="Today"
-              />
-              <MediumCard
-                handle={"Nathan F."}
-                label={"SUBSCRIBERS"}
-                site="youtube"
-                value={8239}
-                valueType="number"
-                variation="-"
-                variationValue={144}
-                when="Today"
-              />
-            </CardsContainer>
+            <CardsContainer />
             <SimpleTitle />
             <SmallCardsContainer>
               <SmallCard />

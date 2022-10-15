@@ -8,36 +8,48 @@ export const providedContent = {
     dark: "Light Mode",
     light: "Dark Mode",
   },
-  mainView: {
-    facebook: {
+  mainView: [
+    {
       handle: "@nathanf",
-      amount: "1987",
       label: "Followers",
+      site: "facebook",
+      value: 1987,
+      valueType: "number",
+      variation: "+",
+      variationValue: 12,
       when: "Today",
-      value: 12,
     },
-    twitter: {
+    {
       handle: "@nathanf",
-      amount: "1044",
       label: "Followers",
+      site: "twitter",
+      value: 1044,
+      valueType: "number",
+      variation: "+",
+      variationValue: 99,
       when: "Today",
-      value: 99,
     },
-    instagram: {
-      handle: "@realnathanf",
-      amount: "11k",
+    {
+      handle: "@nathanf",
       label: "Followers",
+      site: "instagram",
+      value: 11000,
+      valueType: "number",
+      variation: "+",
+      variationValue: 1099,
       when: "Today",
-      value: 99,
     },
-    youtube: {
-      handle: "@realnathanf",
-      amount: "11k",
-      label: "Followers",
+    {
+      handle: "Nathan F.",
+      label: "Subscribers",
+      site: "youtube",
+      value: 8239,
+      valueType: "number",
+      variation: "-",
+      variationValue: 144,
       when: "Today",
-      value: 99,
     },
-  },
+  ],
   overview: {
     facebook: [
       {
