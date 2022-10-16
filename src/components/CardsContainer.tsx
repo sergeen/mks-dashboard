@@ -11,8 +11,9 @@ const CardsContainer = ({toggleModal}) => {
 
   return (
     <StyledCardsContainer>
-      {cards.map((item) => (
+      {cards.map((item, index) => (
         <MediumCard
+          key={index}
           handle={item.handle}
           label={item.label}
           site={item.site}

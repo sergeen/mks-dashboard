@@ -4,7 +4,7 @@ export const StyledSmallCardsContainer = styled.div`
   display: grid;
   grid-column-gap: 30px;
   grid-row-gap: 24px;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 0;
   transition: padding, gap 500ms linear;
   @media (max-width: 1110px) {
@@ -15,7 +15,7 @@ export const StyledSmallCardsContainer = styled.div`
     grid-row-gap: 10px;
   }
   @media (max-width: 425px) {
-    grid-template-columns: 1.2fr 1fr;
+    grid-template-columns: 1.25fr 1fr;
     grid-column-gap: 0;
     grid-row-gap: 4px;
     > div:nth-child(even) {

@@ -4,7 +4,7 @@ import {ThemeProvider} from "styled-components";
 import {GlobalStyles} from "./components/GlobalStyles";
 import {providedContent} from "./components/providedContent";
 import CardsContainer from "./components/CardsContainer";
-import DashboardHeader from "./components/dashboardHeader";
+import DashboardHeader from "./components/DashboardHeader";
 import HighCharts from "./components/HighCharts";
 import MainContainer from "./components/MainContainer";
 import Modal from "./components/Modal";

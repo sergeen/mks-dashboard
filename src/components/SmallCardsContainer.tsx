@@ -11,8 +11,8 @@ const SmallCardsContainer = () => {
 
   return (
     <StyledSmallCardsContainer>
-      {overviewData.map((item) => (
-        <SmallCard {...item} />
+      {overviewData.map((item, index) => (
+        <SmallCard {...item} key={index}/>
       ))}
     </StyledSmallCardsContainer>
   );

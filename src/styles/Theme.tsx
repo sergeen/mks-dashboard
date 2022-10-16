@@ -23,6 +23,7 @@ const Theme = {
     toggleBg: Colors.dark.toggle,
     toggleDot: Colors.dark.veryDarkBlueTopBgPattern,
     toggleText: Colors.neutral.secondaryGray,
+    separator: Colors.neutral.dashedGrey,
   },
   lightTheme: {
     headerSubtitle: Colors.neutral.darkGrey,
@@ -42,10 +43,12 @@ const Theme = {
     chartTooltipText: Colors.dark.desaturatedPurpleChart,
     chartBg: Colors.primary.white,
     cardBg: Colors.neutral.mediumGrey,
+    smallCardTitle: Colors.neutral.darkGrey,
     hoverCardBg: Colors.light.LightHoverCardBg,
     toggleBg: Colors.light.toggle,
     toggleDot: Colors.light.veryPaleBlueTopBgPattern,
     toggleText: Colors.neutral.darkGrey,
+    separator: Colors.neutral.dashedGrey,
   },
 };
 

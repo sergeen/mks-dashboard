@@ -6,7 +6,7 @@ export const StyledSmallCards = styled.div`
   color: ${(props) => props.theme.defaultText};
   cursor: pointer;
   gap: 27px;
-  padding: 30px 30px 0px 24px;
+  padding: 30px 30px 27px 24px;
   position: relative;
   transition: padding, gap 500ms linear;
   &:hover {
@@ -27,18 +27,17 @@ export const StyledSmallCards = styled.div`
   p {
     font-size: 14px;
     line-height: 85.5%;
+    color: ${(props) => props.theme.smallCardTitle};
   }
   .stats {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 27px;
     padding-top: 30px;
     width: 100%;
     h2 {
       font-size: 32px;
       letter-spacing: -0.04em;
       line-height: 85.5%;
-      text-transform: lowercase;
     }
     > div {
       align-items: flex-end;
@@ -48,19 +47,34 @@ export const StyledSmallCards = styled.div`
       }
     }
   }
-  @media (max-width: 720px) {
+  @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    gap: 8px;
+    gap: 10px;
     div:nth-child(1) {
       /* Social Icon */
       position: relative;
-      right: 0;
-      top: 0;
+      right: initial;
+      top: initial;
     }
     .stats {
-      padding: 6px 0;
+      padding-top: 10px;
+      h2 {
+        font-size: 24px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    gap: 8px;
+    .stats {
+      padding-top: 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      > div {
+        justify-content: flex-end;
+      }
       h2 {
         font-size: 24px;
       }
@@ -72,66 +86,35 @@ export const StyledSmallCards = styled.div`
   }
   @media (max-width: 425px) {
     border-radius: 0;
-    border-bottom: 1px solid ${(props) => props.theme.defaultText};
+    border-bottom: 1px solid ${(props) => props.theme.separator};
     background-color: ${(props) => props.theme.pageBg};
     display: flex;
     flex-direction: row;
-    padding: 4px 10px;
-    gap: 4px;
-    div:nth-child(2) {
-      width: 100%;
-    }
-    .stats {
-      padding: 6px 0 0 0;
-      > div {
-        justify-content: end;
-      }
-      h2 {
-        font-size: 18px;
-      }
-    }
-    p {
-      font-size: 12px;
-      line-height: 100%;
-    }
-  }
-  @media (max-width: 425px) {
-    border-radius: 0;
-    border-bottom: 1px solid ${(props) => props.theme.defaultText};
-    background-color: ${(props) => props.theme.pageBg};
-    display: flex;
-    flex-direction: row;
-    padding: 4px 10px;
-    gap: 4px;
-    div:nth-child(2) {
-      width: 100%;
-    }
-    .stats {
-      padding: 6px 0 0 0;
-      > div {
-        justify-content: end;
-      }
-      h2 {
-        font-size: 18px;
-      }
-    }
-    p {
-      font-size: 12px;
-      line-height: 100%;
-    }
-  }
-  @media (max-width: 375px) {
-    gap: 0;
     padding: 4px 10px 4px 0;
+    gap: 4px;
     div:nth-child(2) {
-      p {
-        font-size: 10px;
-      }
+      width: 100%;
     }
     .stats {
-      h2 {
-        font-size: 12px;
+      padding: 6px 0 0 0;
+      flex-direction: row;
+      gap: 0px;
+      > div {
+        justify-content: end;
       }
+      h2 {
+        font-size: 18px;
+      }
+    }
+    p {
+      font-size: 12px;
+      line-height: 100%;
+    }
+  }
+  @media (max-width: 320px) {
+    .stats {
+      flex-direction: column;
+      gap: 4px;
     }
   }
 `;

@@ -41,7 +41,7 @@ export const GlobalStyles = createGlobalStyle`
     }
     @media (max-width: 768px) {
       &::before {
-        height: 80%;
+        height: 50%;
       }
     }
   }
