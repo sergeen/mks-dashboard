@@ -38,7 +38,7 @@ function App() {
           <GlobalStyles />
           <MainContainer>
             <DashboardHeader isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
-            <CardsContainer />
+            <CardsContainer toggleModal={toggleModal} />
             <SimpleTitle />
             <SmallCardsContainer />
             {isModal && (
