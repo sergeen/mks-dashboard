@@ -1,7 +1,7 @@
 const HighChartsOptions = (theme, size) => ({
   chart: {
     type: "spline",
-    height: size + "%",
+    height: size + "px",
     backgroundColor: theme.chartBg,
   },
   xAxis: {

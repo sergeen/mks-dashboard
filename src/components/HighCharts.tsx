@@ -25,7 +25,7 @@ const HighCharts = () => {
     <SyledHighCharts>
       <HighchartsReact
         highcharts={Highcharts}
-        options={HighChartsOptions(useTheme(), currentHeight/25)}
+        options={HighChartsOptions(useTheme(), currentHeight / 2.7)}
       />
     </SyledHighCharts>
   );
