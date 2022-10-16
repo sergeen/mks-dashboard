@@ -52,6 +52,7 @@ export const StyledMediumCard = styled.div`
       letter-spacing: -0.04em;
       line-height: 85.5%;
       text-align: center;
+      text-transform: lowercase;
     }
     p {
       color: ${(props) => props.theme.defaultText};
@@ -60,6 +61,7 @@ export const StyledMediumCard = styled.div`
       letter-spacing: 0.425em;
       line-height: 100%;
       text-align: center;
+      text-transform: uppercase;
     }
   }
   div:nth-child(3) {
@@ -87,5 +89,12 @@ export const StyledMediumCard = styled.div`
     filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.3));
     gap: 8px;
     padding: 22px 0 14px 0;
+  }
+  @media (max-width: 375px) {
+    div:nth-child(2) {
+      h2 {
+        font-size: 32px;
+      }
+    }
   }
 `;

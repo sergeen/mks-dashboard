@@ -1,7 +1,6 @@
 import {useContext} from "react";
 
 import {AppContext} from "../App";
-import {toCompactNumber} from "../helpers/numbers";
 import MediumCard from "../components/MediumCard";
 
 import {StyledCardsContainer} from "./CardsContainer.styles";
@@ -17,7 +16,7 @@ const CardsContainer = () => {
           handle={item.handle}
           label={item.label}
           site={item.site}
-          value={toCompactNumber(item.value)}
+          value={item.value}
           valueType={item.valueType}
           variation={item.variation}
           variationValue={item.variationValue}

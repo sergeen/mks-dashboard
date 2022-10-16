@@ -13,7 +13,6 @@ import Overlay from "./components/Overlay";
 import Theme from "./styles/Theme";
 import SimpleTitle from "./components/SimpleTitle";
 import SmallCardsContainer from "./components/SmallCardsContainer";
-import SmallCard from "./components/SmallCard";
 
 const dataInit = providedContent;
 
@@ -41,16 +40,7 @@ function App() {
             <DashboardHeader isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
             <CardsContainer />
             <SimpleTitle />
-            <SmallCardsContainer>
-              <SmallCard />
-              <SmallCard />
-              <SmallCard />
-              <SmallCard />
-              <SmallCard />
-              <SmallCard />
-              <SmallCard />
-              <SmallCard />
-            </SmallCardsContainer>
+            <SmallCardsContainer />
             {isModal && (
               <Overlay>
                 <Modal>

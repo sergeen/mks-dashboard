@@ -38,6 +38,7 @@ export const StyledSmallCards = styled.div`
       font-size: 32px;
       letter-spacing: -0.04em;
       line-height: 85.5%;
+      text-transform: lowercase;
     }
     > div {
       align-items: flex-end;
@@ -92,6 +93,45 @@ export const StyledSmallCards = styled.div`
     p {
       font-size: 12px;
       line-height: 100%;
+    }
+  }
+  @media (max-width: 425px) {
+    border-radius: 0;
+    border-bottom: 1px solid ${(props) => props.theme.defaultText};
+    background-color: ${(props) => props.theme.pageBg};
+    display: flex;
+    flex-direction: row;
+    padding: 4px 10px;
+    gap: 4px;
+    div:nth-child(2) {
+      width: 100%;
+    }
+    .stats {
+      padding: 6px 0 0 0;
+      > div {
+        justify-content: end;
+      }
+      h2 {
+        font-size: 18px;
+      }
+    }
+    p {
+      font-size: 12px;
+      line-height: 100%;
+    }
+  }
+  @media (max-width: 375px) {
+    gap: 0;
+    padding: 4px 10px 4px 0;
+    div:nth-child(2) {
+      p {
+        font-size: 10px;
+      }
+    }
+    .stats {
+      h2 {
+        font-size: 12px;
+      }
     }
   }
 `;

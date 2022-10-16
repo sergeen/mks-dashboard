@@ -1,3 +1,5 @@
+import {toCompactNumber} from "../helpers/numbers";
+
 import {StyledMediumCard} from "./MediumCard.styles";
 import SocialHandle from "./SocialHandle";
 import Variation from "./Variation";
@@ -13,10 +15,10 @@ const MediumCard: React.FC<{
   site?: "facebook" | "twitter" | "instagram" | "youtube";
 }> = ({value, label, handle, variation, variationValue, when, valueType, site, toggleModal}) => {
   return (
-    <StyledMediumCard onClick={() => toggleModal()} site={site}>
+    <StyledMediumCard site={site} onClick={() => toggleModal()}>
       <SocialHandle site={site} size="small" value={handle} />
       <div>
-        <h2>{value}</h2>
+        <h2>{toCompactNumber(value)}</h2>
         <p>{label}</p>
       </div>
       <Variation
