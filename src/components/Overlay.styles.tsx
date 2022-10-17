@@ -9,7 +9,7 @@ export const StyledOverlay = styled.div`
   justify-content: center;
   left: 0;
   padding: 14px;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
 `;

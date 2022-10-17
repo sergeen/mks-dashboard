@@ -27,7 +27,7 @@ export const StyledSmallCards = styled.div`
   p {
     font-size: 14px;
     line-height: 85.5%;
-    color: ${(props) => props.theme.smallCardTitle};
+    color: ${(props) => props.theme.headerSubtitle};
   }
   .stats {
     display: flex;
@@ -38,6 +38,7 @@ export const StyledSmallCards = styled.div`
       font-size: 32px;
       letter-spacing: -0.04em;
       line-height: 85.5%;
+      text-transform: lowercase;
     }
     > div {
       align-items: flex-end;

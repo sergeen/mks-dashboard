@@ -11,5 +11,8 @@ export const StyledToggle = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     justify-content: flex-end;
+    p {
+      font-size: 12px;
+    }
   }
 `;

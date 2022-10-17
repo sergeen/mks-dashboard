@@ -37,4 +37,21 @@ export const StyledSwitch = styled.label`
       width: 18px;
     }
   }
+  @media (max-width: 768px) {
+    height: 20px;
+    margin-left: 13px;
+    width: 40px;
+    input[type="checkbox"]:checked + .switch::before {
+      transform: translateX(19px);
+    }
+    .switch {
+      border-radius: 20px;
+      &::before {
+        height: 16px;
+        left: 3px;
+        top: 2px;
+        width: 16px;
+      }
+    }
+  }
 `;
