@@ -1,5 +1,7 @@
 import {useTheme} from "styled-components";
 
+import {StyledArrow} from "./Arrow.styles";
+
 export const Arrow = ({
   height = "7",
   width = "12",
@@ -10,17 +12,14 @@ export const Arrow = ({
   variation: "+" | "-";
 }) => {
   const theme = useTheme();
-  const color = variation === "+" ? theme.positive : theme.negative;
-  const transform = variation === "+" ? "rotate(0)" : "rotate(180)";
+  const variationSign = variation === "+";
+  const color = variationSign ? theme.positive : theme.negative;
+  const transform = variationSign ? "rotate(0)" : "rotate(180)";
+  const margin = variationSign ? 0 : 0.25;
 
   return (
-    <svg
-      height={height + "px"}
-      transform={transform}
-      width={width + "px"}
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <StyledArrow height={height} margin={margin} transform={transform} width={width}>
       <path d="m0 4 4-4 4 4z" fill={color} fillRule="evenodd" />
-    </svg>
+    </StyledArrow>
   );
 };

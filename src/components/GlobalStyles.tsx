@@ -16,8 +16,8 @@ export const GlobalStyles = createGlobalStyle`
   ${reset}
   ${normalize}
   html, body {
-    min-width: 100vw;
-    min-height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
   }
   body {
     background-color: ${(props) => props.theme.pageBg};
