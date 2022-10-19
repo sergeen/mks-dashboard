@@ -1,7 +1,7 @@
-import Close from "./Close";
-import LabeledStat from "./LabeledStat";
+import Close from "../Close/Close";
+import LabeledStat from "../LabeledStats/LabeledStat";
 import {StyledModalHeader} from "./ModalHeader.styles";
-import SocialHandle from "./SocialHandle";
+import SocialHandle from "../SocialHandle/SocialHandle";
 
 const ModalHeader = ({toggleModal}) => {
   return (

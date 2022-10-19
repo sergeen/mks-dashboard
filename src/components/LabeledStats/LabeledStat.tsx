@@ -1,5 +1,5 @@
 import {StyledLabeledStat} from "./LabeledStats.styles";
-import Variation from "./Variation";
+import Variation from "../Variation/Variation";
 
 const LabeledStat: React.FC<{
   value: number;

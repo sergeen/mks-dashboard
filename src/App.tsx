@@ -1,18 +1,18 @@
 import {StrictMode, useState, createContext} from "react";
 import {ThemeProvider} from "styled-components";
 
-import {GlobalStyles} from "./components/GlobalStyles";
-import {providedContent} from "./components/providedContent";
-import CardsContainer from "./components/CardsContainer";
-import DashboardHeader from "./components/DashboardHeader";
-import HighCharts from "./components/HighCharts";
-import MainContainer from "./components/MainContainer";
-import Modal from "./components/Modal";
-import ModalHeader from "./components/ModalHeader";
-import Overlay from "./components/Overlay";
+import {GlobalStyles} from "./styles/GlobalStyles";
+import {providedContent} from "./content/providedContent";
+import CardsContainer from "./components/CardContainer/CardsContainer";
+import DashboardHeader from "./components/Dashboard/DashboardHeader";
+import HighCharts from "./components/HighCharts/HighCharts";
+import MainContainer from "./components/MainContainer/MainContainer";
+import Modal from "./components/Modal/Modal";
+import ModalHeader from "./components/ModalHeader/ModalHeader";
+import Overlay from "./components/Overlay/Overlay";
 import Theme from "./styles/Theme";
-import SimpleTitle from "./components/SimpleTitle";
-import SmallCardsContainer from "./components/SmallCardsContainer";
+import SimpleTitle from "./components/SimpleTitle/SimpleTitle";
+import SmallCardsContainer from "./components/SmallCardsContainer/SmallCardsContainer";
 
 const dataInit = providedContent;
 

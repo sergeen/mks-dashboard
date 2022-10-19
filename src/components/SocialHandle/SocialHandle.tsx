@@ -1,7 +1,7 @@
-import IconFacebook from "../assets/img/icon-facebook.svg?component";
-import IconTwitter from "../assets/img/icon-twitter.svg?component";
-import IconInstagram from "../assets/img/icon-instagram.svg?component";
-import IconYoutube from "../assets/img/icon-youtube.svg?component";
+import IconFacebook from "../../assets/img/icon-facebook.svg?component";
+import IconTwitter from "../../assets/img/icon-twitter.svg?component";
+import IconInstagram from "../../assets/img/icon-instagram.svg?component";
+import IconYoutube from "../../assets/img/icon-youtube.svg?component";
 
 import {StyledSocialHandle} from "./SocialHandle.styles";
 

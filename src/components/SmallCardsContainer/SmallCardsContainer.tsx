@@ -1,7 +1,7 @@
 import {useContext} from "react";
 
-import {AppContext} from "../App";
-import SmallCard from "../components/SmallCard";
+import {AppContext} from "../../App";
+import SmallCard from "../SmallCard/SmallCard";
 
 import {StyledSmallCardsContainer} from "./SmallCardsContainer.styles";
 

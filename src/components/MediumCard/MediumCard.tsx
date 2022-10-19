@@ -1,8 +1,8 @@
-import {toCompactNumber} from "../helpers/numbers";
+import {toCompactNumber} from "../../helpers/numbers";
 
 import {StyledMediumCard} from "./MediumCard.styles";
-import SocialHandle from "./SocialHandle";
-import Variation from "./Variation";
+import SocialHandle from "../SocialHandle/SocialHandle";
+import Variation from "../Variation/Variation";
 
 const MediumCard: React.FC<{
   value: number | string;

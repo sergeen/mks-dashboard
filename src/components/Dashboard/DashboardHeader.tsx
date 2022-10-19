@@ -1,5 +1,5 @@
 import {StyledDashboardHeader} from "./DashboardHeader.styles";
-import Toggle from "./Toggle";
+import Toggle from "../Toggle/Toggle";
 
 const DashboardHeader = ({toggleTheme, isDarkTheme}) => {
   return (

@@ -1,5 +1,5 @@
 import {StyledVariation} from "./Variation.styles";
-import {Arrow} from "./Arrow";
+import {Arrow} from "../Arrow/Arrow";
 
 const Variation: React.FC<{
   variation?: "+" | "-";

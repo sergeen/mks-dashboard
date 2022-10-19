@@ -1,4 +1,4 @@
-import Switch from "./Switch";
+import Switch from "../Switch/Switch";
 import {StyledToggle} from "./Toggle.styles";
 
 const Toggle = ({toggleTheme, isDarkTheme}) => {
